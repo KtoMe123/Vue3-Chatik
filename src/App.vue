@@ -33,7 +33,7 @@ export default {
 <template>
   
   <div class="container">
-    <MainPage :UsersInfo="UsersInfo"/>
+    <MainPage :UsersInfo="UsersInfo" :HeadIcons="HeadIcons"/>
   </div>
   
 </template>

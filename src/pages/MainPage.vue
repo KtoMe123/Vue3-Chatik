@@ -9,7 +9,7 @@
                 <users-list :userss="SortedUsers" @sendId="IDget"></users-list>
             </div>
             <div class="main__chat-frame">
-                <chat-frame v-bind:usersID="usersID" v-bind:UsersInfo="UsersInfo"/>
+                <chat-frame :usersID="usersID" :UsersInfo="UsersInfo" :HeadIcons="HeadIcons"/>
             </div>
         </div>
     </div>
@@ -24,6 +24,9 @@ import ChatFrame from '../components/ChatFrame.vue'
 export default {
     props: {
         UsersInfo: {
+            type: Array
+        },
+        HeadIcons: {
             type: Array
         }
     },

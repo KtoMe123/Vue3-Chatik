@@ -50,6 +50,9 @@ export default {
         },
         UsersInfo: {
             type: Array
+        },
+        HeadIcons: {
+            type: Array
         }
     },
     methods: {
