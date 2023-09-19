@@ -1,6 +1,6 @@
-import MyHeader from './MyHeader.vue'
-import MySearch from './MySearch.vue'
-import MyInput from './MyInput.vue'
+import MyHeader from '@/components/UI/MyHeader.vue'
+import MySearch from '@/components/UI/MySearch.vue'
+import MyInput from '@/components/UI/MyInput.vue'
 
 export default [
     MySearch,

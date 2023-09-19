@@ -18,9 +18,9 @@
 
 
 <script>
-import UsersList from "../components/UsersList.vue";
-import UserFrame from '../components/UserFrame.vue'
-import ChatFrame from '../components/ChatFrame.vue'
+import UsersList from "@/components/UsersList.vue";
+import UserFrame from '@/components/UserFrame.vue'
+import ChatFrame from '@/components/ChatFrame.vue'
 export default {
     props: {
         UsersInfo: {
