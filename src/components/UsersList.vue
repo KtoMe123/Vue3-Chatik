@@ -1,6 +1,7 @@
 <template>
-    <div @click="sendId" class="users">
-        <div class="users__item" v-for="user in userss" :key="user.id" @click="this.userID = user.id">
+    <div class="users-empty" v-if="usersSort < 1">empty</div>
+    <div v-else @click="sendId" class="users">
+        <div class="users__item" v-for="user in usersSort" :key="user.id" @click="this.userID = user.id">
             <div  class="users__img"><img :src="user.img" alt="user" class="user-img"></div>
             <div class="users__info">
                 <div class="users__head">
@@ -20,7 +21,7 @@
 export default {
     name: 'users-list',
     props: {
-        userss: {
+        usersSort: {
             type: Array,
             required: true,
         }
@@ -42,6 +43,14 @@ export default {
 </script>
 
 <style scoped>
+
+.users-empty {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    opacity: 0.6;
+    font-weight: 700;
+}
 
 .users__item {
     position: relative;

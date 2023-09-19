@@ -20,7 +20,11 @@
 
 export default {
     name: 'user-frame',
-    inject: ['HeadIcons'],
+    props: {
+        HeadIcons: {
+            type: Array
+        }
+    },
 
     data() {
         return {

@@ -2,11 +2,11 @@
     <div class="container">
         <div class="main">
             <div class="main__user-frame">
-                <user-frame/>
+                <user-frame :HeadIcons="HeadIcons"/>
                 <search  v-on="this.Users = UsersInfo" v-focus placeholder="Search or start new chat" v-model="this.SearchUser">
                     <ion-icon class="search-icon" name="search-outline"></ion-icon>
                 </search>
-                <users-list :userss="SortedUsers" @sendId="IDget"></users-list>
+                <users-list :usersSort="SortedUsers" @sendId="IDget"></users-list>
             </div>
             <div class="main__chat-frame">
                 <chat-frame :usersID="usersID" :UsersInfo="UsersInfo" :HeadIcons="HeadIcons"/>
