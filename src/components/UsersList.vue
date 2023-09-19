@@ -114,7 +114,7 @@ export default {
     font-size: 14px;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    min-height: 19px;
+    min-height: 17px;
     text-overflow: ellipsis;
 }
 

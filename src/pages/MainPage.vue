@@ -72,6 +72,17 @@ export default {
     display: flex;
 }
 
+@media screen and (max-width: 1440px) {
+    .container {
+        width: 1200px
+    }
+}
+@media screen and (max-width: 1222px) {
+    .container {
+        width: 1000px
+    }
+}
+
 .main {
     display: flex;
     width: 100%;

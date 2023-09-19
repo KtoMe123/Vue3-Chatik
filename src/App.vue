@@ -1,6 +1,6 @@
 <script>
-import MainPage from './pages/MainPage.vue'
-import UsersList from './components/UsersList.vue'
+import MainPage from '@/pages/MainPage.vue'
+import UsersList from '@/components/UsersList.vue'
 
 export default {
   components: {
@@ -31,11 +31,7 @@ export default {
 </script>
 
 <template>
-  
-  <div class="container">
-    <MainPage :UsersInfo="UsersInfo" :HeadIcons="HeadIcons"/>
-  </div>
-  
+  <MainPage :UsersInfo="UsersInfo" :HeadIcons="HeadIcons"/>
 </template>
 
 <style>
