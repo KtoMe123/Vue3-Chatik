@@ -42,79 +42,72 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
-.users-empty {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 24px;
-    opacity: 0.6;
-    font-weight: 700;
-}
-
-.users__item {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    border-bottom: 1px solid rgba(0,0,0,0.06);
-    cursor: pointer;
-}
-
-.users__item:hover {
-    background: #f5f5f5;
-}
-
-.users__img {
-    position: relative;
-    min-width: 45px;
-    height: 45px;
-    overflow: hidden;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.users__img .user-img {
-    position: absolute;
-    width: 45px;
-    height: 45px;
-}
-
-.chat-message {
-    position: relative;
-}
-
-.users__info {
-    position: relative;
-    width: 100%;
-}
-
-.users__head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 11px;
-}
-
-.users__name {
-    font-size: 17px;
-    font-weight: 600;
-    color: #111;
-}
-
-.users__time {
-    font-size: 12px;
-    color: #aaa;
-}
-
-.users__message {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.users {
+    &-empty {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 24px;
+        opacity: 0.6;
+        font-weight: 700;
+    }
+    &__item  {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+        cursor: pointer;
+    }
+    &__item:hover {
+        background: #f5f5f5;
+    }
+    &__img {
+        position: relative;
+        min-width: 45px;
+        height: 45px;
+        overflow: hidden;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    &__img .user-img {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+    }
+    &__info {
+        position: relative;
+        width: 100%;
+    }
+    &__head  {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 11px;
+    }
+    &__name {
+        font-size: 17px;
+        font-weight: 600;
+        color: #111;
+    }
+    &__time {
+        font-size: 12px;
+        color: #aaa;
+    }
+    &__message {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item_active {
+        background-color: #ebebeb;
+    }
 }
 
 .chat-message {
+    position: relative;
     color: #aaa;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -125,7 +118,4 @@ export default {
     text-overflow: ellipsis;
 }
 
-.users__item_active {
-    background-color: #ebebeb;
-}
 </style>

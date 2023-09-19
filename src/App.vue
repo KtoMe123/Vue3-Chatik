@@ -10,11 +10,11 @@ export default {
   data() {
     return {
       UsersInfo: [
-                {id: 0, img: 'src/assets/user(1).png', name: 'Muhammad Shayan'},
-                {id: 1, img: 'src/assets/janku.png', name: 'Bratan'},
-                {id: 2, img: 'src/assets/janku2.png', name: 'Prikolist'},
-                {id: 3, img: 'src/assets/janku3.png', name: 'DeadInside'},
-                {id: 4, img: 'src/assets/qwqw.png', name: 'Abu'}
+                {id: 0, img: 'src/assets/user(1).png', name: 'Muhammad Shayan', message_1: 'hello'},
+                {id: 1, img: 'src/assets/janku.png', name: 'Bratan', message_1: 'hi'},
+                {id: 2, img: 'src/assets/janku2.png', name: 'Prikolist', message_1: 'Bonjorno'},
+                {id: 3, img: 'src/assets/janku3.png', name: 'DeadInside', message_1: 'Hey'},
+                {id: 4, img: 'src/assets/qwqw.png', name: 'Abu', message_1: 'Good morning'}
             ],
       HeadIcons: [
                 {name: 'scan-circle-outline'},

@@ -4,7 +4,6 @@
         <div class="search-chat__input">
             <input :value="modelValue" @input="updateInput" class="search-input" type="text" :placeholder="placeholder">
             <slot></slot>
-            
         </div>
         </div>
 </template>
@@ -25,7 +24,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
 .search-chat {
     position: relative;
     width: 100%;
@@ -35,12 +34,13 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 0 15px;
+    &__input {
+        width: 100%;
+    }
+    &-input::placeholder {
+        color: #bbb;
+    }
 }
-
-.search-chat__input {
-    width: 100%;
-}
-
 .search-input {
     width: 100%;
     outline: none;
@@ -48,13 +48,10 @@ export default {
     background: #fff;
     padding: 6px;
     height: 38px;
+    margin-right: 30px;
     border-radius: 30px;
     font-size: 14px;
     padding-left: 40px;
-}
-
-.search-input::placeholder {
-    color: #bbb;
 }
 
 </style>

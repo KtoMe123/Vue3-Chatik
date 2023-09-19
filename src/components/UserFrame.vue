@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .header__img {
     height: 40px;
     width: 40px;
@@ -52,11 +52,8 @@ export default {
     color: #51585c;
     font-size: 24px;
     margin-right: 22px;
+    &:last-child {
+        margin: 0;
+    }
 }
-.nav-icon:last-child {
-    margin: 0;
-}
-
-
-
 </style>

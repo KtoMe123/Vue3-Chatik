@@ -61,7 +61,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .container {
     position: relative;
     width: 1396px;
@@ -75,25 +75,23 @@ export default {
 .main {
     display: flex;
     width: 100%;
-}
-
-.main__user-frame {
-    width: 100%;
-    position: relative;
-    flex: 30%;
-    height: 100%;
-    background: #fff;
-}
-
-.main__chat-frame {
-    width: 100%;
-    right: 0;
-    display: flex;
-    position: relative;
-    flex: 70%;
-    height: 100%;
-    background: #e5ddd5;
-    border-left: 1px solid rgba(0,0,0,0.2);
+    &__user-frame {
+        width: 100%;
+        position: relative;
+        flex: 30%;
+        height: 100%;
+        background: #fff;
+    }
+    &__chat-frame {
+        width: 100%;
+        right: 0;
+        display: flex;
+        position: relative;
+        flex: 70%;
+        height: 100%;
+        background: #e5ddd5;
+        border-left: 1px solid rgba(0,0,0,0.2);
+    }
 }
 
 .search-icon {
