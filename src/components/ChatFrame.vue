@@ -28,7 +28,13 @@
                         </div>
                     </div>
 
-                    <my-input></my-input>
+                    <div class="input-form">
+                        <ion-icon class="input__icon" name="happy-outline"></ion-icon>
+                        <ion-icon class="input__icon" name="attach-outline"></ion-icon>
+                        <my-input placeholder="Type a message"></my-input>
+                        <ion-icon class="input__icon" name="mic"></ion-icon>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -176,4 +182,37 @@ export default {
     font-size: 12px;
     opacity: 0.5;
 }
+
+.input-form {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #f0f0f0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    position: relative;
+    width: 90%;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.input__icon {
+    cursor: pointer;
+    font-size: 29px;
+    color: #51585c;
+}
+
+.input__icon:nth-child(1) {
+    margin-right: 15px;
+}
+
 </style>

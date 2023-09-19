@@ -10,6 +10,7 @@
                     <li class="nav-icon" v-for="icon in HeadIcons" :key="icon"><ion-icon :name="icon.name"></ion-icon></li>
                 </ul>
             </template>
+            
         </main-header>
     </div>
         
@@ -51,5 +52,7 @@ export default {
 .nav-icon:last-child {
     margin: 0;
 }
+
+
 
 </style>
